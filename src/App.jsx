@@ -1,3 +1,7 @@
+import dividerMobile from "./assets/images/pattern-divider-mobile.svg";
+import dividerDesktop from "./assets/images/pattern-divider-desktop.svg";
+import diceIcon from "./assets/images/icon-dice.svg";
+
 const App = () => {
   return (
     <main>
@@ -7,17 +11,11 @@ const App = () => {
         and taking action.”
       </p>
       <picture>
-        <source
-          media="(min-width: 768px)"
-          srcset="./assets/images/pattern-divider-desktop.svg"
-        />
-        <img
-          src="./assets/images/pattern-divider-mobile.svg"
-          alt="Pattern Divider"
-        />
+        <source media="(min-width: 768px)" srcSet={dividerDesktop} />
+        <img src={dividerMobile} alt="Pattern Divider" />
       </picture>
       <button type="button">
-        <img src="./assets/images/icon-dice.svg" alt="Generate New Advice" />
+        <img src={diceIcon} alt="Generate New Advice" />
       </button>
     </main>
   );
