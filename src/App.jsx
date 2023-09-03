@@ -11,10 +11,10 @@ const App = () => {
         and taking action.”
       </p>
       <picture>
-        <source media="(min-width: 768px)" srcSet={dividerDesktop} />
+        <source media="(min-width: 376px)" srcSet={dividerDesktop} />
         <img src={dividerMobile} alt="Pattern Divider" />
       </picture>
-      <button type="button">
+      <button type="button" className="btn">
         <img src={diceIcon} alt="Generate New Advice" />
       </button>
     </main>

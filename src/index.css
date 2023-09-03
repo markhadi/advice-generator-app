@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-manrope font-extrabold bg-neutral-darkBlue min-h-screen grid place-content-center px-4 sm:px-0;
+  }
+
+  main {
+    @apply flex flex-col items-center bg-neutral-darkGrayishBlue px-6 pt-10 rounded-lg max-w-[540px] translate-y-[-16px] sm:px-12 sm:pt-[52px] sm:rounded-2xl;
+  }
+
+  h1 {
+    @apply text-[11px] leading-none tracking-[.32em] text-primary-neonGreen uppercase mb-[26px] sm:text-[13px];
+  }
+
+  p {
+    @apply text-[24px] leading-[33px] tracking-[-.01em] text-center text-primary-lightCyan mb-10 sm:text-[28px] sm:leading-[38px];
+  }
+
+  picture {
+    @apply sm:mb-[7px];
+  }
+}
+
+@layer components {
+  .btn {
+    @apply w-16 h-16 bg-primary-neonGreen rounded-full grid place-content-center transition-all translate-y-[32px]
+            hover:shadow-[0_0_34px_0_hsl(150,100%,66%)];
+  }
+}
