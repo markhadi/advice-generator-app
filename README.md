@@ -15,7 +15,7 @@ Users should be able to:
 - Solution URL: https://github.com/markhadi/advice-generator-app
 - Live Site URL: http://markhadi.github.io/advice-generator-app/
 
-## Author
+# Author
 
 - Website - [Cake Resume](https://www.cakeresume.com/markhadi)
 - Frontend Mentor - [markhadi](https://www.frontendmentor.io/profile/markhadi)
